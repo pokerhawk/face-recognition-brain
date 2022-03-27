@@ -22,7 +22,7 @@ class Register extends React.Component {
     }
 
     onSubmitSignIn = () =>{
-        fetch('https://git.heroku.com/vast-sands-47308.git/register', {
+        fetch('https://vast-sands-47308.herokuapp.com/register', { mode: 'no-cors'}, {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
